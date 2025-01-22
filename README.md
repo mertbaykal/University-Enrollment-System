@@ -17,6 +17,18 @@ This project demonstrates a simplified university enrollment system implemented 
 3. **Communication Queue**:
    - Manages and processes communication events between students and universities.
 
+### File Structure
+The project is structured into separate files for modularity:
+```
+university_enrollment/
+│
+├── main.py        # Entry point of the application
+├── event.py       # Contains Event and its child classes
+├── queue.py       # Contains the CommunicationQueue class
+├── student.py     # Contains the Student class
+└── university.py  # Contains the University class
+```
+
 ### How It Works
 - A student sends an application to a university.
 - The university can either accept or reject the application.
@@ -24,14 +36,11 @@ This project demonstrates a simplified university enrollment system implemented 
 
 ### Running the Code
 1. Ensure you have Python installed.
-2. Save the code in `main.py`.
+2. Save the files in the appropriate structure as shown above.
 3. Run the script:
    ```bash
    python main.py
    ```
 
 The script will simulate a student applying to a university, and the university processing the application.
-
-### File Structure
-- `main.py`: Contains the implementation of the system.
 
